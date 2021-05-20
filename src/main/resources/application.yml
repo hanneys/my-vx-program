@@ -9,12 +9,12 @@ spring:
     name: vx-program
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://192.168.2.2:3306/test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 123456
   redis:
     database: 0
-    host: localhost
+    host: 192.168.2.2
     port: 6379
     password:
     jedis:
@@ -29,6 +29,7 @@ spring:
     time-zone: GMT+8
     serialization:
       write-dates-as-timestamps: false
+
 
 mybatis-plus:
   configuration:
@@ -45,3 +46,7 @@ mybatis-plus:
       logic-delete-value: 0
 exclude:
   path: /login/**,/test/**,/people/**,/file/**,/background/**
+
+elasticsearch:
+  host: 192.168.2.2
+  port: 9200

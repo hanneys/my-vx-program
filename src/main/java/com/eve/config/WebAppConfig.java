@@ -30,15 +30,15 @@ public class WebAppConfig implements WebMvcConfigurer {
     // SpringMVC 需要手动添加拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(jwtInterceptor())
-                //拦截的路径
-                .addPathPatterns("/**")
-                //排除登录接口
-                .excludePathPatterns(url.split(","));
-        log.info("excludePathPatterns:{}",url);
-        ResponseResultInterceptor interceptor = new ResponseResultInterceptor();
-        registry.addInterceptor(interceptor);
-        WebMvcConfigurer.super.addInterceptors(registry);
+//        registry.addInterceptor(jwtInterceptor())
+//                //拦截的路径
+//                .addPathPatterns("/**")
+//                //排除登录接口
+//                .excludePathPatterns(url.split(","));
+//        log.info("excludePathPatterns:{}",url);
+//        ResponseResultInterceptor interceptor = new ResponseResultInterceptor();
+//        registry.addInterceptor(interceptor);
+//        WebMvcConfigurer.super.addInterceptors(registry);
     }
 
     @Override

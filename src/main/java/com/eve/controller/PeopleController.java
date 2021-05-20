@@ -2,7 +2,6 @@ package com.eve.controller;
 
 
 import com.eve.aspect.SysLog;
-import com.eve.base.BizException;
 import com.eve.base.ResponseResult;
 import com.eve.entity.People;
 import com.eve.service.IPeopleService;
@@ -51,6 +50,7 @@ public class PeopleController {
     public List<People> select() {
         return iPeopleService.list();
     }
+
 
     @PostMapping("inSql")
     public List<People> inSql() {
