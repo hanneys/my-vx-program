@@ -16,7 +16,7 @@ public class TestController {
 
     @RequestMapping("zz")
     public String test1() {
-        return "kill";
+        return "给各位老板问好";
     }
 
 

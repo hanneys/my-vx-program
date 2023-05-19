@@ -9,12 +9,12 @@ spring:
     name: vx-program
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.2.2:3306/test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://www.dbat.top:3306/test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 123456
   redis:
     database: 0
-    host: 192.168.2.2
+    host: www.dbat.top
     port: 6379
     password:
     jedis:
@@ -47,6 +47,6 @@ mybatis-plus:
 exclude:
   path: /login/**,/test/**,/people/**,/file/**,/background/**
 
-elasticsearch:
-  host: 192.168.2.2
-  port: 9200
+#elasticsearch:
+#  host: 192.168.2.2
+#  port: 9200
