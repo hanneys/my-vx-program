@@ -4,6 +4,7 @@ import com.alibaba.excel.EasyExcel;
 import com.alibaba.fastjson.JSON;
 import com.eve.entity.People;
 import com.eve.service.IPeopleService;
+import com.eve.service.ITExDataService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,6 +25,9 @@ public class MycatApplicationTests {
     @Autowired
     private IPeopleService iPeopleService;
 
+    @Autowired
+    private ITExDataService itExDataService;
+
 
 
 
@@ -34,8 +38,9 @@ public class MycatApplicationTests {
 //        messages.forEach(StringUtils::capitalize);
 //        System.out.println(messages);
 //        System.out.println(StringUtils.capitalize("hello"));
-        List<People> list = iPeopleService.list();
-        log.info("----list:{}", JSON.toJSONString(list));
+//        List<People> list = iPeopleService.list();
+//        log.info("----list:{}", JSON.toJSONString(list));
+        itExDataService.saveData();
     }
 
 }
