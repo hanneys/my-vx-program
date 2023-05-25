@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.eve.mapper.TCompanyMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, tenant_code, company_id, corp_id, name, short_name, company_type, cert_code, province, province_name, city, city_name, distrct, distrct_name, address, longitude, latitude, nature, business_city, business_city_extend, has_warehourse_biz, price_period, is_self_delivery, is_invoice, account_period, account_period_months_day, credit_limit, is_display_price, arrival_period, arrival_begin_time, arrival_end_time, order_end_time, replenish_end_time, is_print_delivery_order, is_print_join_price, is_print_sales_price, payment_way, settlement_way, is_free_ship, fence_switch, fence_radius, status, creator, create_time, last_modifier, last_modify_time, is_deleted, customer_category, push_wms_status, sap_customer_id, payment_day, affiliated_enterprise, warehourse_pricing_model, merge_order_config, merge_order_time, sign_for_config
+    </sql>
+
+</mapper>
